@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Spring Boot App</title>
+        <link rel="stylesheet" th:href=@{/css/styles.css}>
+        <link rel="stylesheet" th:href=@{/css/bootstrap.min.css}>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a th:href="@{/}">Home</a></li>
+                    <li><a th:href="@{/about}">About</a></li>
+                    <li><a th:href="@{/projects}">Projects</a></li>
+                    <li><a th:href="@{/contact}">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div th:fragment="main">
+                <h1>Welcome to My Online Resume</h1>
+                <p>This is the home page of my online resume.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>My Skills</h2>
+                            <p>My core skills and competencies include strong communication, teamwork, problem-solving, time management, and organizational skills. I am able to manage multiple tasks efficiently, work well with others, and adapt to new situations. I also have strong leadership and analytical abilities, which help me make decisions, handle challenges, and complete projects effectively.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <h2>My Experience</h2>
+                            <p>I have gained valuable professional experience through working on a variety of projects and responsibilities that have strengthened my communication, leadership, and problem-solving skills. I have successfully managed multiple tasks, collaborated with teams, and contributed to improving processes and achieving organizational goals. My achievements include completing projects on time, taking initiative to solve challenges, and consistently developing my technical and professional skills. These experiences have helped me become more organized, adaptable, and confident in handling new responsibilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <button onClick="alert('Welcome to my portfolio!')" class="btn btn-primary">Click Me</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; My Online Resume</p>
+    </footer>
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SlApplication<sl>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dscoz.sl.SlApplication",
+            "projectName": "sl",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

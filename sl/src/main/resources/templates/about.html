@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Spring Boot App</title>
+        <link rel="stylesheet" th:href=@{/css/styles.css}>
+        <link rel="stylesheet" th:href=@{/css/bootstrap.min.css}>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a th:href="@{/}">Home</a></li>
+                    <li><a th:href="@{/about}">About</a></li>
+                    <li><a th:href="@{/projects}">Projects</a></li>
+                    <li><a th:href="@{/contact}">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div th:fragment="main">
+                <h1>About Me</h1>
+                <p>Short bio about yourself.</p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; My Online Resume</p>
+        </footer>
+            <script th:src+"@{/js/script.js}"></script>
+    </body>
+</html>
